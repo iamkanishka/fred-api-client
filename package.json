@@ -1,0 +1,71 @@
+{
+  "name": "fred-api-client",
+  "version": "0.0.1",
+  "description": "A fully-typed TypeScript client for the Federal Reserve Economic Data (FRED) API",
+  "keywords": [
+    "fred",
+    "federal-reserve",
+    "economic-data",
+    "api-client",
+    "typescript",
+    "stlouisfed",
+    "economics",
+    "finance"
+  ],
+  "author": "Kanishka Naik",
+  "license": "MIT",
+  "homepage": "https://github.com/iamkanishka/fred-api-client#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamkanishka/fred-api-client"
+  },
+  "bugs": {
+    "url": "https://github.com/iamkanishka/fred-api-client/issues",
+    "email": "kanishkabc123@gmail.com"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "bnp": "npm run build && npm publish",
+    "bnl": "npm run build && npm link",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
