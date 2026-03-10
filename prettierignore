@@ -1,0 +1,6 @@
+# ── Never format these ───────────────────────────────────────────
+node_modules/
+dist/
+dist-test/
+coverage/
+*.json
