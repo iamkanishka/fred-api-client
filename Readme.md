@@ -1,6 +1,6 @@
 # fred-api-client
 
-[![CI](https://github.com/yourusername/fred-api-client/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/fred-api-client/actions)
+
 [![npm version](https://badge.fury.io/js/fred-api-client.svg)](https://www.npmjs.com/package/fred-api-client)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
